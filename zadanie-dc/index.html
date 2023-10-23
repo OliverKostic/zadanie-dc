@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles.css">
+  <script src="code.js"></script>
+  <title>Title</title>
+</head>
+<body>
+
+  <div class="content">
+    <div class="carousel">
+      <ul class="slides-container" id="slides-container">
+        <li class="slide"><img src="pic4.png"></li>
+        <li class="slide"><img src="pic1.png"></li>
+        <li class="slide"><img src="pic2.png"></li>
+        <li class="slide"><img src="pic3.png"></li>
+      </ul>
+    </div>
+
+    <div class="title">Zadanie DC</div>
+    <div class="text">
+      <div class="column">Ahoj, vypracuj prosím toto zadanie použitím technológií HTML, pure CSS, a JS. Zadanie by ti nemalo zabrať viac ako 2 hod. Hore je umiestnený carousel, v ktorom sa obrázok automaticky mení každých 5 sekúnd. Obrázky rotujú. Nie je pre Nás podstatné aby boli obrázky celé, podstatné je aby carousel slides boli rovnakej veľkosti. Je potrebné aby zadanie bolo vypracované responzívne.</div>
+      <div class="column">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a rutrum massa, ut congue ipsum. Etiam in porta ante. Duis at neque at diam convallis ornare. Phasellus imperdiet pellentesque placerat. Curabitur laoreet porta nisl non aliquet. Suspendisse venenatis porttitor egestas.
+        <div class="button-row">
+          <button class="more">More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner not-visible">
+    <button class="banner-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="hideBanner()">
+      <path d="M12 13.4L7.10005 18.3C6.91672 18.4833 6.68338 18.575 6.40005 18.575C6.11672 18.575 5.88338 18.4833 5.70005 18.3C5.51672 18.1167 5.42505 17.8833 5.42505 17.6C5.42505 17.3167 5.51672 17.0833 5.70005 16.9L10.6 12L5.70005 7.1C5.51672 6.91667 5.42505 6.68334 5.42505 6.4C5.42505 6.11667 5.51672 5.88334 5.70005 5.7C5.88338 5.51667 6.11672 5.425 6.40005 5.425C6.68338 5.425 6.91672 5.51667 7.10005 5.7L12 10.6L16.9 5.7C17.0834 5.51667 17.3167 5.425 17.6 5.425C17.8834 5.425 18.1167 5.51667 18.3 5.7C18.4834 5.88334 18.575 6.11667 18.575 6.4C18.575 6.68334 18.4834 6.91667 18.3 7.1L13.4 12L18.3 16.9C18.4834 17.0833 18.575 17.3167 18.575 17.6C18.575 17.8833 18.4834 18.1167 18.3 18.3C18.1167 18.4833 17.8834 18.575 17.6 18.575C17.3167 18.575 17.0834 18.4833 16.9 18.3L12 13.4Z" fill="#F0F0F0"/>
+    </svg></button>
+    <div class="banner-content">
+      <div class="banner-title">Ahoj</div>
+      <div class="banner-text">ja som banner. Zobrazím sa 3 sekundy po otvorení stránky a zbavíš sa ma len kliknutím na moje X.</div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<script>
+  init();
+</script>

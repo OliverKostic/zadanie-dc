@@ -1,0 +1,193 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #D9D9D9;
+  font-family: 'Roboto';
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+.content {
+  max-width: 960px;
+  height: 100vh;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+
+.carousel {
+  height: 320px;
+  margin: 20px 0;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel {
+    height: 196px;
+  }
+}
+
+.slides-container {
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: -200px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  transition: none;
+}
+
+.slide {
+  height: 100%;
+  margin-right: 20px;
+}
+
+.slide img {
+  height: 320px;
+  width: 640px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .slide img {
+    height: 196px;
+    width: 320px;
+    border-radius: 10px;
+  }
+}
+
+.title {
+  margin-top: 48px;
+  margin-left: 20px;
+  background-color: #f0f0f0;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 75px;
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 32px;
+    line-height: 37.5px;
+    margin-top: 0px;
+    text-align: center;
+  }
+}
+
+.text {
+  margin: 20px;
+  margin-top: 24px;
+  background-color: #f0f0f0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .text {
+    flex-direction: column;
+  }
+}
+
+.column {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.button-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.more {
+  width: 117px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 20px;
+  background-image: linear-gradient(to right, #e7a03b 0%, #bd430d  100%);
+  color: white;
+  cursor: pointer;
+}
+
+.more :hover {
+  cursor: pointer;
+}
+
+.banner {
+  width: 320px;
+  height: 358px;
+  border-radius: 16px;
+  color: white;
+  background-color: black;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999;
+}
+
+.is-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+
+.not-visible {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
+
+.banner-content {
+  width: 288px;
+  height: 254px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.banner-title {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 75px;
+}
+
+.banner-text {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28.13px;
+}
+
+.banner-close {
+  background-color: transparent;
+  color: white;
+  margin: 10px;
+  border: none;
+}
+
+.banner-close:hover {
+  cursor: pointer;
+}
+
+
+
+
+
